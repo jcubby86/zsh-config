@@ -98,7 +98,6 @@ plugins=(
 	postgres
 	python
 	ssh
-	vscode
 	yarn
 	sdk
 ) 
@@ -131,10 +130,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-alias pretty='python3 -mjson.tool | python3 -m pygments -l json'
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export PATH=$PATH:~/go/bin
