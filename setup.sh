@@ -19,9 +19,5 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/the
 cp .zshrc $HOME/.zshrc
 cp .p10k.zsh $HOME/.p10k.zsh
 
-if user_can_sudo; then
-    sudo -k chsh -s "$zsh" "$USER"  # -k forces the password prompt
-else
-    chsh -s "$zsh" "$USER"          # run chsh normally
-fi
+chsh -s "$zsh" "$USER" 
 exec zsh -l
