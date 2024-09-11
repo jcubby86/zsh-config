@@ -19,5 +19,5 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/the
 cp .zshrc $HOME/.zshrc
 cp .p10k.zsh $HOME/.p10k.zsh
 
-chsh -s "$zsh" "$USER" 
+chsh -s "$(which zsh)" "$USER" 
 exec zsh -l
