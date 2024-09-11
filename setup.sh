@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+
 if ! command -v zsh &> /dev/null
 then
     echo "zsh could not be found"
@@ -14,5 +16,3 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/the
 
 cp .zshrc $HOME/.zshrc
 cp .p10k.zsh $HOME/.p10k.zsh
-
-exec zsh
