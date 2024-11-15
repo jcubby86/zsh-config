@@ -106,7 +106,7 @@ plugins=(
 	yarn
 	zsh-autosuggestions
 	zsh-syntax-highlighting
-	ohmyzsh-full-autoupdate
+	autoupdate
 )
 
 source $ZSH/oh-my-zsh.sh
